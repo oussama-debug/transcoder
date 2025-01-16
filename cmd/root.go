@@ -4,6 +4,7 @@ import (
 	"io"
 	"os"
 
+	"github.com/oussama-debug/transcoder/internal/graphics"
 	"github.com/spf13/cobra"
 )
 
@@ -37,5 +38,6 @@ func Execute() {
 }
 
 func run(cmd *cobra.Command, args []string) error {
+	graphics.Start()
 	return nil
 }

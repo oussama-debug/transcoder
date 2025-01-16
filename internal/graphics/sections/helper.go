@@ -1,4 +1,4 @@
-package graphics
+package sections
 
 import (
 	"fmt"
