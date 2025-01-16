@@ -32,7 +32,7 @@ const (
 * returns string - ASCII colored string based on given color.
  */
 func colorizeMessage(s string, c Color) string {
-	if c == 0 {
+	if c == -1 {
 		return s
 	}
 	return fmt.Sprintf(_colorFormat, c, s)
