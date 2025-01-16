@@ -32,12 +32,12 @@ func printLogo(c color.Color) {
 
 func printVersion(short bool) {
 	const _format = "%-20s %s\n"
-	var outputColor color.Color = color.Cyan
+	var outputColor color.Color = color.Red
 
 	if short {
 		outputColor = -1
 	} else {
-		outputColor = color.Cyan
+		outputColor = color.Red
 		printLogo(outputColor)
 	}
 
